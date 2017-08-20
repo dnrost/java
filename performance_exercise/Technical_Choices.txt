@@ -1,0 +1,7 @@
+- Class AnagramsFinder
+- Method 'displayAnagrams' is static, because it doesn't require the use of any non static variables.
+Static also, so it can be used without having to instatiate the class (less work).
+- To read the file , I use 'Scanner' because we are interested in reading word by word.
+- Use of a method which sort words alphabeticaly. sorted words are used as keys in the map.
+- The PathFile is passed to the main method as an argument so we can re-use the program for other files.
+- By using Scanner, we are reducing the use of the memory, we keep just the current word, but this program is using a HashMap which hold all the words of the file, so in a context where we are reading very big files, we can have an out of memory error.
